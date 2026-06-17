@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Computação em Nuvem</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--dark);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .role-badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .topics-list, .advantages-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topics-list li, .advantages-list li {
+            background-color: var(--light);
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .topics-list strong, .advantages-list strong {
+            color: var(--secondary);
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .alert-box {
+            background-color: #fff7ed;
+            border-left: 4px solid #ea580c;
+            padding: 1rem 1.5rem;
+            border-radius: 0 4px 4px 0;
+            margin-top: 1.5rem;
+        }
+
+        .alert-box h4 {
+            color: #c2410c;
+            margin: 0 0 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--dark);
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tudo Sobre Computação em Nuvem</h1>
+        <p>Do conceito básico às estratégias avançadas de negócios</p>
+    </header>
+
+    <nav>
+        <a href="#promptA">O que é?</a>
+        <a href="#promptB">Visão do Professor</a>
+        <a href="#promptC">Vantagens para TI</a>
+        <a href="#promptD">Estratégia de Negócios</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="promptA">
+            <h2>Introdução Direta</h2>
+            <p><strong>A computação em nuvem</strong> é a entrega de recursos de computação — incluindo servidores, armazenamento, bancos de dados, redes, software e análise — pela Internet ("a nuvem"). Em vez de comprar e manter seus próprios servidores físicos ou computadores para rodar programas localmente, você contrata esses serviços sob demanda de provedores, de forma flexível, pagando apenas pelo que usar.</p>
+        </section>
+
+        <section id="promptB">
+            <span class="role-badge">Role: Professor de Tecnologia</span>
+            <h2>A Nuvem em 3 Tópicos Didáticos</h2>
+            <ul class="topics-list">
+                <li>
+                    <strong>1. Infraestrutura sob Demanda</strong>
+                    Imagine que você não precisa mais comprar um computador superpotente para rodar um sistema pesado. A nuvem permite que você "alugue" a capacidade de processamento e o espaço de armazenamento de servidores gigantescos espalhados pelo mundo, acessando tudo pela internet.
+                </li>
+                <li>
+                    <strong>2. O Fim da Instalação Local</strong>
+                    Antigamente, para usar um software, era necessário comprar um CD-ROM e instalá-lo máquina por máquina. Na nuvem, os programas rodam nos servidores do provedor. Você só precisa de um navegador web e uma conexão de internet para acessar suas ferramentas e arquivos de qualquer lugar.
+                </li>
+                <li>
+                    <strong>3. Escalabilidade e Elasticidade</strong>
+                    Se o site da sua empresa recebe 100 acessos por dia e, de repente, recebe 10.000, a nuvem aumenta a capacidade automaticamente para o site não cair. Quando o movimento voltar ao normal, ela reduz os recursos para você não pagar a mais por isso.
+                </li>
+            </ul>
+        </section>
+
+        <section id="promptC">
+            <span class="role-badge">Role: Especialista em Cloud Computing</span>
+            <h2>5 Vantagens para Migração (Foco: Gestores de TI)</h2>
+            <ul class="advantages-list">
+                <li>
+                    <strong>1. Redução de Custos Operacionais (CapEx para OpEx)</strong>
+                    Elimina-se a necessidade de grandes investimentos iniciais em hardware, infraestrutura de data centers locais, energia e refrigeração. O modelo passa a ser de despesa operacional, onde se paga pelo consumo real.
+                </li>
+                <li>
+                    <strong>2. Escalabilidade Rápida e Flexível</strong>
+                    Permite aumentar ou diminuir a capacidade computacional (memória, processamento, armazenamento) em minutos, respondendo rapidamente às oscilações de demanda do negócio sem a burocracia de comprar novos equipamentos.
+                </li>
+                <li>
+                    <strong>3. Alta Disponibilidade e Redundância</strong>
+                    Os provedores de nuvem possuem infraestruturas globais com mecanismos de backup automáticos e redundância. Isso garante que, se um servidor falhar, outro assume imediatamente, minimizando o tempo de inatividade (downtime) dos sistemas.
+                </li>
+                <li>
+                    <strong>4. Segurança Avançada e Conformidade</strong>
+                    Grandes provedores investem bilhões em segurança da informação, oferecendo criptografia de ponta, firewalls robustos e conformidade com regulamentações globais (como LGPD), um nível de proteção difícil e caro de se replicar em um ambiente local.
+                </li>
+                <li>
+                    <strong>5. Agilidade e Facilidade de Inovação</strong>
+                    Equipes de desenvolvimento conseguem provisionar novos ambientes de teste e homologação em poucos cliques. Isso acelera o ciclo de lançamento de novos produtos e ferramentas, tornando a TI um motor de inovação estratégica.
+                </li>
+            </ul>
+        </section>
+
+        <section id="promptD">
+            <span class="role-badge">Role: Arquiteto de Soluções Cloud Sênior</span>
+            <h2>Planejamento Estratégico: Cenário E-commerce (Black Friday)</h2>
+            <p>Abaixo está a análise dos três modelos de serviço focada em custo-benefício e impacto financeiro para a diretoria:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo de Serviço</th>
+                            <th>O que gerenciamos?</th>
+                            <th>O que a Nuvem gerencia?</th>
+                            <th>Impacto Financeiro</th>
+                            <th>Cenário Prático no E-commerce</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>IaaS</strong> (Infraestrutura)</td>
+                            <td>Sistema operacional, dados e códigos.</td>
+                            <td>Servidores físicos, rede e energia.</td>
+                            <td>OpEx puro. Paga por hora de máquina ligada.</td>
+                            <td>Alugar servidores virtuais extras para aguentar a semana do evento.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PaaS</strong> (Plataforma)</td>
+                            <td>Apenas o código e os produtos.</td>
+                            <td>Toda a infraestrutura e atualizações.</td>
+                            <td>OpEx otimizado. Reduz gastos com manutenção de TI.</td>
+                            <td>O site cresce de tamanho sozinho conforme os acessos aumentam.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SaaS</strong> (Software)</td>
+                            <td>Apenas configurações e produtos.</td>
+                            <td>Absolutamente tudo (infraestrutura e sistema).</td>
+                            <td>OpEx previsível. Assinatura ou comissão por venda.</td>
+                            <td>Migrar a loja para uma plataforma pronta de mercado (ex: Shopify ou VTEX).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert-box">
+                <h4>⚠️ Análise de Risco para a Operação</h4>
+                <p><strong>Risco:</strong> O fator tempo vs. curva de aprendizado. Realizar uma migração às pressas e sem testes de carga perto da Black Friday pode fazer o sistema herdar falhas antigas.</p>
+                <p><strong>Mitigação:</strong> Iniciar o projeto com pelo menos 90 dias de antecedência para homologar e realizar os testes de estresse na nova estrutura.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Portal Cloud Computing - Desenvolvido para exibição integrada de Prompts.</p>
+    </footer>
+
+</body>
+</html> 
